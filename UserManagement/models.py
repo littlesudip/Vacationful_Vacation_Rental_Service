@@ -14,6 +14,11 @@ class User(models.Model):
     contact_no=models.IntegerField(blank=True,null=True)
 
 
+class Traveller(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=1, null=True)
+    travelling_area = models.CharField(max_length=1000)
+
+
 
 
 
