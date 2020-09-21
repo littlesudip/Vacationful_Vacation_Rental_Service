@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccbc3e43-c7a9-4c08-a97d-46e46bec942a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Vacationful_Vacation_Rental_Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Vacationful_Vacation_Rental_Service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PropertyManagement/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/PropertyManagement/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PropertyManagement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/PropertyManagement/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="4636a368-6ec2-4f1b-a50b-d098776b3c9f" />
+  <component name="JupyterTrust" id="3a2ae546-1b22-4eab-87ed-5dc6b9427260" />
   <component name="ProjectId" id="1hmGGzcxuKzOjuTBqNJcoU6pql8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -77,6 +81,7 @@
       <workItem from="1600686305330" duration="1114000" />
       <workItem from="1600696301155" duration="3025000" />
       <workItem from="1600701598756" duration="1982000" />
+      <workItem from="1600703728390" duration="852000" />
     </task>
     <servers />
   </component>
