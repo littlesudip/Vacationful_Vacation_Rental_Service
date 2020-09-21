@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccbc3e43-c7a9-4c08-a97d-46e46bec942a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagement/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="f34b290a-5e7e-446a-8be8-95442be291dc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JupyterTrust" id="3a2ae546-1b22-4eab-87ed-5dc6b9427260" />
-  <component name="ProjectId" id="1hmGGzcxuKzOjuTBqNJcoU6pql8" />
+  <component name="ProjectId" id="1hnlqDC5Chwv14YPG8GHczbqVKY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,15 +20,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunManager">
-    <configuration name="Vacationful_Vacation_Rental_Service" type="Python.DjangoServer" factoryName="Django server">
-      <module name="Vacationful_Vacation_Rental_Service" />
+    <configuration name="Vacationful" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Vacationful" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="Vacationful.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -52,16 +50,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ccbc3e43-c7a9-4c08-a97d-46e46bec942a" name="Default Changelist" comment="" />
-      <created>1600608762905</created>
+      <changelist id="f34b290a-5e7e-446a-8be8-95442be291dc" name="Default Changelist" comment="" />
+      <created>1600654925937</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1600608762905</updated>
-      <workItem from="1600608764062" duration="13000" />
-      <workItem from="1600621079890" duration="174000" />
-      <workItem from="1600625098476" duration="636000" />
-      <workItem from="1600626378187" duration="2472000" />
-      <workItem from="1600670006981" duration="685000" />
+      <updated>1600654925937</updated>
+      <workItem from="1600654927127" duration="442000" />
     </task>
     <servers />
   </component>
@@ -69,21 +63,9 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1600608776503">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600655370000">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600608776503" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1600608776503">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600608776503" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1600608776503">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600608776503" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1600608776503">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600608776503" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600655370000" />
   </component>
 </project>
