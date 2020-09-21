@@ -6,7 +6,7 @@ from django.db import models
 
 
 class User(models.Model):
-    user_type = models.CharField(max_length=100)
+
     NID_ID = models.IntegerField(blank=True,null=True)
     name=models.CharField(max_length=100)
     email=models.EmailField(max_length=200)
