@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'UserManagement.apps.UsermanagementConfig',
     'Booking.apps.BookingConfig',
-    'PropertyManagement.apps.PropertymanagementConfig'
+    'PropertyManagement.apps.PropertymanagementConfig',
+    'Payment.apps.PaymentConfig'
 ]
 
 MIDDLEWARE = [
