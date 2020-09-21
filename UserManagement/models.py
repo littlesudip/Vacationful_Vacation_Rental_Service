@@ -19,7 +19,6 @@ class Traveller(models.Model):
     travelling_area = models.CharField(max_length=1000)
 
 
-
-
-
-
+class Owner(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=1, null=True)
+    number_of_property=models.IntegerField(blank=True,null=True)
