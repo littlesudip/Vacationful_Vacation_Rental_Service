@@ -6,5 +6,16 @@
 </head>
 <body>
 <h3> This is user info page</h3>
+{% for member in all_user %}
+    <p>
+    NID_ID:{{ member.NID_ID  }} <br>
+    name:{{ member.name }} <br>
+    email:{{ member.email }} <br>
+    address:{{ member.address }}<br>
+    contact_no={{ member.contact_no }}
+    </p>
+{% endfor %}
+
+
 </body>
 </html>

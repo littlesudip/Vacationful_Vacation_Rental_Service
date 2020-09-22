@@ -19,5 +19,5 @@ from UserManagement import views as user_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('userinfo/',user_views.showUserInfo)
+    path('userinfo/',user_views.showuserinfo)
 ]
