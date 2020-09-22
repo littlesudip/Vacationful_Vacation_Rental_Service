@@ -1,14 +1,26 @@
+
+
+
 from django.shortcuts import render
-from .models import Property
+
 # Create your views here.
+from PropertyManagement.forms import PropertyForm
 
 
-def allproperty(request):
+def addproperty(request):
 
-    listproperty = Property.objects.all()
+    message = ""
+    form= PropertyForm()
+    if request.method == "POST":
 
-    context = {""
-               "all_property": listproperty
-               }
-
-    return render(request, 'Property/allproperty.html',context)
+        form = PropertyForm(request.POST)
+    message = "Invalid input. Please try again!"
+    if form.is_valid():
+        form.save()
+        message = "Property is inserted to Database. You can insert a new property"
+        form = PropertyForm()
+    context = {
+        'form': form,
+        'message' : message
+    }
+    return render(request, 'Property/addproperty.html' ,context)
