@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccbc3e43-c7a9-4c08-a97d-46e46bec942a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Vacationful_Vacation_Rental_Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Vacationful_Vacation_Rental_Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PropertyManagement/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PropertyManagement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/PropertyManagement/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vacationful/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vacationful/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Property/addproperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Property/addproperty.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,15 +16,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="68aab95b-8cbd-40e9-bc3c-0780222e8ec7" />
+  <component name="JupyterTrust" id="3a2ae546-1b22-4eab-87ed-5dc6b9427260" />
   <component name="ProjectId" id="1hmGGzcxuKzOjuTBqNJcoU6pql8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -86,6 +88,7 @@
       <workItem from="1600799989609" duration="988000" />
       <workItem from="1600802010186" duration="62000" />
       <workItem from="1600802662736" duration="146000" />
+      <workItem from="1600803060919" duration="367000" />
     </task>
     <servers />
   </component>
