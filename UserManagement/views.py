@@ -16,7 +16,7 @@ def showuserinfo(request):
 
 
 
-def inserinfo(request):
+def insertinfo(request):
 
     message = ""
     form= infoForm()
