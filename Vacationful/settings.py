@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Booking.apps.BookingConfig',
     'PropertyManagement.apps.PropertymanagementConfig',
     'Payment.apps.PaymentConfig'
+
 ]
 
 MIDDLEWARE = [
