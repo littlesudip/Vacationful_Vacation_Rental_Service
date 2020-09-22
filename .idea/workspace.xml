@@ -20,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="d859e4d2-6455-4598-880c-57db8d97e320" />
+  <component name="JupyterTrust" id="4636a368-6ec2-4f1b-a50b-d098776b3c9f" />
   <component name="ProjectId" id="1hmGGzcxuKzOjuTBqNJcoU6pql8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -81,6 +81,7 @@
       <workItem from="1600705797979" duration="372000" />
       <workItem from="1600778915892" duration="11421000" />
       <workItem from="1600798110278" duration="299000" />
+      <workItem from="1600799989609" duration="417000" />
     </task>
     <servers />
   </component>
@@ -97,6 +98,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1600795275223">
