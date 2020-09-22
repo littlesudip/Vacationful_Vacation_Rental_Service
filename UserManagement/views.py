@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .forms import CreateUserCreationForm
+from .forms import forms
 from .models import User
 # Create your views here.
 
@@ -11,7 +11,13 @@ def showuserinfo(request):
                }
     return render(request,"UserManagement/showuserinfo.html",context)
 
+def insertinfo(request):
+    form = forms()
 
+    context = {
+            'form' : form
+    }
+    return render(request, "UserManagement/insertinfo.html", context)
 
 
 
