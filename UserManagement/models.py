@@ -3,8 +3,6 @@ from django.db import models
 # Create your models here.
 
 
-
-
 class User(models.Model):
 
     NID_ID = models.IntegerField(blank=True,null=True)

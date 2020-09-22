@@ -25,5 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('userinfo/',user_views.showuserinfo),
     path('insertinfo/',user_views.insertinfo),
-    path('addproperty/', property_views.addproperty)
+    path('addproperty/', property_views.addproperty),
+    path('property/', property_views.allproperty)
 ]
