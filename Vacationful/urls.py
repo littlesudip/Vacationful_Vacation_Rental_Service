@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from UserManagement import views as user_views
+from PropertyManagement import views as property_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('userinfo/',user_views.showuserinfo)
+    path('userinfo/',user_views.showuserinfo),
+    path('property/',property_views.allproperty)
 ]
