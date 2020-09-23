@@ -1,4 +1,6 @@
 from django.shortcuts import render
+
+from .forms import PropertyForm
 from .models import Property
 # Create your views here.
 
@@ -23,7 +25,7 @@ def addproperty(request):
     if request.method == "POST":
 
         form = PropertyForm(request.POST)
-    message = "Invalid input. Please try again!"
+
     if form.is_valid():
         form.save()
         message = "Property is inserted to Database. You can insert a new property"

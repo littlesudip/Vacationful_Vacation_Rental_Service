@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccbc3e43-c7a9-4c08-a97d-46e46bec942a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PropertyManagement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/PropertyManagement/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagement/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vacationful/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vacationful/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Property/addproperty.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Property/addproperty.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="d859e4d2-6455-4598-880c-57db8d97e320" />
+  <component name="JupyterTrust" id="3a2ae546-1b22-4eab-87ed-5dc6b9427260" />
   <component name="ProjectId" id="1hmGGzcxuKzOjuTBqNJcoU6pql8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -107,6 +108,7 @@
       <workItem from="1600803060919" duration="367000" />
       <workItem from="1600804983619" duration="159000" />
       <workItem from="1600805535488" duration="200000" />
+      <workItem from="1600830785906" duration="476000" />
     </task>
     <servers />
   </component>
