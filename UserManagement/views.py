@@ -21,7 +21,7 @@ def insertinfo(request):
     if request.method == "POST":
 
         form = infoForm(request.POST)
-    message = "Invalid input. Please try again!"
+    message = ""
     if form.is_valid():
         form.save()
         message = "Thank You"
