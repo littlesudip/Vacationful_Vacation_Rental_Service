@@ -1,10 +1,9 @@
 from django.shortcuts import render
-from .forms import forms
-from .models import User
-from django.shortcuts import render
 
+from .forms import infoForm
+from .models import User
 # Create your views here.
-from UserManagement.forms import infoForm
+
 
 def showuserinfo(request):
 
@@ -17,10 +16,9 @@ def showuserinfo(request):
 
 
 def insertinfo(request):
-
-    message = ""
-    form= infoForm()
-    if request.method == "POST":
+message = " "
+form= infoForm()
+if request.method == "POST":
 
         form = infoForm(request.POST)
     message = "Invalid input. Please try again!"
@@ -32,7 +30,7 @@ def insertinfo(request):
         'form': form,
         'message' : message
     }
-    return render(request, 'User/inserinfo.html' ,context)
+    return render(request,'User/insertinfo.html',context)
 
 
 
