@@ -16,9 +16,9 @@ def showuserinfo(request):
 
 
 def insertinfo(request):
-message = " "
-form= infoForm()
-if request.method == "POST":
+    message = " "
+    form= infoForm()
+    if request.method == "POST":
 
         form = infoForm(request.POST)
     message = "Invalid input. Please try again!"
@@ -30,7 +30,7 @@ if request.method == "POST":
         'form': form,
         'message' : message
     }
-    return render(request,'User/insertinfo.html',context)
+    return render(request,'UserManagement/insertinfo.html',context)
 
 
 
