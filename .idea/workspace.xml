@@ -20,11 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccbc3e43-c7a9-4c08-a97d-46e46bec942a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BookingManagement/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BookingManagement/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaymentManagement/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaymentManagement/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagement/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagement/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagement/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagement/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/UserManagement/insertinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UserManagement/insertinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/UserManagement/showuserinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UserManagement/showuserinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookingManagement/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookingManagement/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookingManagement/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookingManagement/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookingManagement/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/BookingManagement/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentManagement/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentManagement/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentManagement/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentManagement/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentManagement/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/PaymentManagement/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserManagement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagement/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vacationful/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vacationful/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +61,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="d33bb9ea-81d8-49b9-bbc0-fd2a33cbac03" />
+  <component name="JupyterTrust" id="d4bd2101-9d0d-4386-8770-00ffd4caa009" />
   <component name="ProjectId" id="1hmGGzcxuKzOjuTBqNJcoU6pql8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -112,6 +131,7 @@
       <workItem from="1600830785906" duration="476000" />
       <workItem from="1600831499268" duration="3051000" />
       <workItem from="1600841108487" duration="585000" />
+      <workItem from="1601037552419" duration="4616000" />
     </task>
     <servers />
   </component>

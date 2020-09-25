@@ -5,7 +5,7 @@ from UserManagement.models import Traveller, Owner
 
 # Create your models here.
 
-class BookingManagement(models.Model):
+class Booking(models.Model):
     traveller = models.ForeignKey(Traveller, on_delete=models.CASCADE, default=1, null=True)
 
     def __str__(self):

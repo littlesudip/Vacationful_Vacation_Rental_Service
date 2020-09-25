@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'UserManagement.apps.UsermanagementConfig',
-    'Booking.apps.BookingConfig',
+    'BookingManagement.apps.BookingConfig',
     'PropertyManagement.apps.PropertymanagementConfig',
-    'Payment.apps.PaymentConfig'
+    'PaymentManagement.apps.PaymentConfig'
 
 ]
 
