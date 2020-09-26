@@ -1,0 +1,10 @@
+{% block content %}
+<h2> Add user information here: </h2>
+<form method="POST">
+  {% csrf_token %}
+    {{ form.as_p }}
+    {{ message }}<br><br>
+
+    <input type="submit">
+</form>
+{% endblock content %}

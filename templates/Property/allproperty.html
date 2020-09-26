@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Property</title>
+</head>
+ <body>
+<div style="text-align: center;">
+<h3> All Available Property List</h3>
+
+<br>
+{% for listproperty in all_property %}
+    <p>
+
+    Property Name: {{ listproperty.property_name}} <br>
+    Location: {{ listproperty.property_location}} <br>
+    Details: {{ listproperty.property_details}} <br>
+    Rent Rate: {{ listproperty.property_pricing}} <br>
+    <br>
+    </p>
+
+{% endfor %}
+
+</body>
+</html>
