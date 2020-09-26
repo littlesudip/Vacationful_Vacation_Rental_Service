@@ -7,15 +7,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="JupyterTrust" id="d859e4d2-6455-4598-880c-57db8d97e320" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="4636a368-6ec2-4f1b-a50b-d098776b3c9f" />
   <component name="ProjectId" id="1i3Gs8XisJk6MKWd8ZlI9FgcjRx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Vacation" type="Python.DjangoServer" factoryName="Django server">
@@ -51,10 +64,25 @@
       <option name="presentableId" value="Default" />
       <updated>1601129066016</updated>
       <workItem from="1601129067536" duration="9000" />
+      <workItem from="1601129851883" duration="12177000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="90" key="#Inspections" timestamp="1601134953802">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="90" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1601134953802" />
+    <state x="223" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601135154527">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601135154527" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601129849353">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601129849353" />
   </component>
 </project>
