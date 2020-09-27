@@ -4,19 +4,19 @@ from .forms import ProfileForm
 
 
 # Create your views here.
-def showProfile(request):
+def showprofile(request):
 
     ProfileList= Profile.objects.all()
     context = {
         'Profiles': ProfileList
     }
-    return render(request, 'profile/viewProfile.html', context)
+    return render(request, 'profile/viewprofile.html', context)
 
 
 
 
 
-def createProfile(request):
+def createprofile(request):
     message = ""
     form = ProfileForm()
 
@@ -38,4 +38,4 @@ def createProfile(request):
         'form' : form,
         'message' : message
     }
-    return render(request, 'profile/createProfile.html', context)
+    return render(request, 'profile/createprofile.html', context)
