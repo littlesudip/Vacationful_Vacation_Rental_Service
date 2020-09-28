@@ -1,4 +1,4 @@
-"""Vacation URL Configuration
+"""Vacationful URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -15,15 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
 from UserManagement import views as user_view
-
-
-
-from django.conf import settings
-from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('profile/',user_view.showprofile,name='profile'),
     path('createProfile/',user_view.createprofile,name='create-profile')
 ]
+

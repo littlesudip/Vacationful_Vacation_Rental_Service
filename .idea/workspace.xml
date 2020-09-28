@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="72bdf1ef-5b6f-4d44-b46d-d0d6945ceee1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Vacation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Vacation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagement/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagement/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserManagement/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/UserManagement/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vacation/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vacation/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="7533c39f-a3b1-41f9-980e-dd852ad9e7f5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,40 +10,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="JupyterTrust" id="d859e4d2-6455-4598-880c-57db8d97e320" />
-  <component name="ProjectId" id="1i3Gs8XisJk6MKWd8ZlI9FgcjRx" />
+  <component name="ProjectId" id="1i8wMym6iMyCo3lC0eacgOcaqyN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
-    <configuration name="Vacation" type="Python.DjangoServer" factoryName="Django server">
-      <module name="Vacation" />
+    <configuration name="Vacationful" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Vacationful" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="DJANGO_SETTINGS_MODULE" value="Vacation.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -91,48 +52,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="72bdf1ef-5b6f-4d44-b46d-d0d6945ceee1" name="Default Changelist" comment="" />
-      <created>1601129066016</created>
+      <changelist id="7533c39f-a3b1-41f9-980e-dd852ad9e7f5" name="Default Changelist" comment="" />
+      <created>1601302482739</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601129066016</updated>
-      <workItem from="1601129067536" duration="9000" />
-      <workItem from="1601129851883" duration="12548000" />
-      <workItem from="1601148103271" duration="1889000" />
-      <workItem from="1601223982142" duration="6000" />
-      <workItem from="1601223988824" duration="622000" />
-      <workItem from="1601224624122" duration="342000" />
-      <workItem from="1601231633572" duration="696000" />
-      <workItem from="1601286546067" duration="1505000" />
+      <updated>1601302482739</updated>
+      <workItem from="1601302484206" duration="779000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="395" y="90" key="#Inspections" timestamp="1601134953802">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="395" y="90" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1601134953802" />
-    <state x="223" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601135154527">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="62" width="1089" height="762" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601135154527" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601286548747">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601286548747" />
   </component>
 </project>
