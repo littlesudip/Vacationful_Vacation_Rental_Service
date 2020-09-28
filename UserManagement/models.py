@@ -9,10 +9,7 @@ class Profile(models.Model):
     NID_id=models.IntegerField(blank=True,null=True)
     address=models.CharField(max_length=300)
     contact_no=models.IntegerField(blank=True,null=True)
-    profile_picture = models.ImageField(upload_to='images/pro_pic')
-
-
-
+    profile_picture = models.ImageField(upload_to='images/pro_pic', blank=True, null=True, default='users/pro_pics/default.jpg')
     user = models.ForeignKey(User,on_delete=models.CASCADE)
 
     def __str__(self):
