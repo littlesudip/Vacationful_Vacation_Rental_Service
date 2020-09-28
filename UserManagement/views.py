@@ -12,10 +12,6 @@ def showprofile(request):
     }
     return render(request, 'profile/viewprofile.html', context)
 
-
-
-
-
 def createprofile(request):
     message = ""
     form = ProfileForm()

@@ -16,11 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from UserManagement import views as user_view
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('profile/',user_view.showprofile,name='profile'),
-    path('createProfile/',user_view.createprofile,name='create-profile')
 ]
-

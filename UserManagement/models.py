@@ -1,15 +1,19 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
 class Profile(models.Model):
-
-    name=models.CharField(max_length=100)
-    email=models.EmailField(max_length=200)
-    NID_id=models.IntegerField(blank=True,null=True)
-    address=models.CharField(max_length=300)
-    contact_no=models.IntegerField(blank=True,null=True)
-    profile_picture = models.ImageField(upload_to='images/pro_pic', blank=True, null=True,default='users/pro_pics/default.jpg')
+    First_Name =models.CharField(max_length=100)
+    Last_Name = models.CharField(max_length=100)
+    Email=models.EmailField(max_length=200)
+    Street_Address = models.CharField(max_length=300,blank=True, null=True, default="")
+    City = models.CharField(max_length=300,blank=True, null=True, default="")
+    State = models.CharField(max_length=300,blank=True, null=True, default="")
+    Country = models.CharField(max_length=300,blank=True, null=True, default="")
+    Contact_No = models.IntegerField(blank=True, null=True, default="")
+    Profile_Picture = models.ImageField(upload_to='images/pro_pic', blank=True, null=True,default='users/pro_pics/default.jpg')
+    NID_No = models.IntegerField(blank=True, null=True, default="")
+    NID_Front = models.ImageField(upload_to='images/idcard', blank=True, null=True,default='images/idcard/front.jpg')
+    NID_Back = models.ImageField(upload_to='images/idcard', blank=True, null=True,default='images/idcard/back.jpg')
     user = models.ForeignKey(User,on_delete=models.CASCADE)
 
     def __str__(self):
