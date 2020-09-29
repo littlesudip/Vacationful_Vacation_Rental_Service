@@ -1,4 +1,7 @@
 from django.shortcuts import render,redirect
+
+from Owner.models import Owner
+from Traveller.models import Traveller
 from .models import Profile
 from .forms import ProfileForm
 from django.contrib.auth.forms import UserCreationForm
@@ -7,19 +10,30 @@ from django.contrib.auth.decorators import login_required
 def register(request):
 
     form = UserCreationForm()
+    form1 = ProfileForm(request.POST,request.FILES)
 
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
-            form.save()
+            user =  form.save()
+
+        if form1.is_valid():
+            profile = form1.save(commit=False)
+            profile.user = user
+            profile.save()
+            if (form1.cleaned_data.get('Owner')):
+                owner = Owner(user=profile)
+                owner.save()
+            else:
+                traveller = Traveller(user=profile)
+                traveller.save()
             return render(request, 'profile/viewprofile.html')
 
     context ={
-        'form' : form
+        'form' : form,
+        'form1': form1
     }
     return render(request, 'user/register.html', context)
-
-
 
 
 # Create your views here.
@@ -30,6 +44,8 @@ def viewprofile(request):
         'Profiles': ProfileList
     }
     return render(request, 'profile/viewprofile.html', context)
+
+
 @login_required()
 def createprofile(request):
     message = ""
