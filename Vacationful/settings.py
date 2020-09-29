@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'UserManagement.apps.UsermanagementConfig',
-    'Traveller.apps.TravellerConfig'
+    'Traveller.apps.TravellerConfig',
+    'Owner.apps.OwnerConfig',
 
 ]
 
