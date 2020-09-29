@@ -7,7 +7,7 @@ from Owner.models import Owner
 class Property(models.Model):
 
     property_name= models.CharField(max_length=200)
-    owner_id= models.ForeignKey(Owner,on_delete=models.CASCADE)
+    owner_id= models.ForeignKey(Owner,on_delete=models.CASCADE,default=1)
     property_type=models.CharField(max_length=200)
     property_location = models.CharField(max_length=200)
     No_of_rooms = models.IntegerField(blank=True, null=True)

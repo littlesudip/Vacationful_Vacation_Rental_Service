@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Profile
 from .forms import ProfileForm
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
 
 def register(request):
 
@@ -11,7 +12,7 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('login')
+            return render(request, 'profile/viewprofile.html')
 
     context ={
         'form' : form
@@ -29,7 +30,7 @@ def viewprofile(request):
         'Profiles': ProfileList
     }
     return render(request, 'profile/viewprofile.html', context)
-
+@login_required()
 def createprofile(request):
     message = ""
     form = ProfileForm()
@@ -44,6 +45,7 @@ def createprofile(request):
             profile.user = request.user
 
             profile.save()
+            return redirect('viewprofile')
 
             message = "Profile is inserted to DB. You can insert a new Profile now"
             form = ProfileForm()
