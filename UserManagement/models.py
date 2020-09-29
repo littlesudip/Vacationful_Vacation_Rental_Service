@@ -2,9 +2,13 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Profile(models.Model):
-    Full_name =models.CharField(max_length=100)
+    Full_Name =models.CharField(max_length=100)
+
     Email=models.EmailField(max_length=200)
-    Address = models.CharField(max_length=300,blank=True, null=True, default="")
+    Street_Address = models.CharField(max_length=300,blank=True, null=True, default="")
+    City = models.CharField(max_length=300,blank=True, null=True, default="")
+    State = models.CharField(max_length=300,blank=True, null=True, default="")
+
     Contact_No = models.IntegerField(blank=True, null=True, default="")
     Profile_Picture = models.ImageField(upload_to='images/pro_pic', blank=True, null=True,default='users/pro_pics/default.jpg')
     NID_No = models.IntegerField(blank=True, null=True, default="")
@@ -14,3 +18,4 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.user.username
+

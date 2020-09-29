@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from PropertyManagement import views as property_views
 from UserManagement import  views as user_views
+from django.urls import path,include
 
 
 urlpatterns = [
@@ -25,5 +26,6 @@ urlpatterns = [
     path('showproperty/', property_views.showallproperty),
     path('registration/', user_views.register, name='register'),
     path('createprofile/',user_views.createprofile),
-    path('viewprofile/',user_views.viewprofile)
+    path('viewprofile/',user_views.viewprofile),
+    path('accounts/', include('django.contrib.auth.urls'))
 ]
