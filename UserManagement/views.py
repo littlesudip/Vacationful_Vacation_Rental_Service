@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Profile
 from .forms import ProfileForm
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.decorators import login_required
+
 def register(request):
 
     form = UserCreationForm()
@@ -11,7 +11,7 @@ def register(request):
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect ('login')
+            return redirect('login')
 
     context ={
         'form' : form
