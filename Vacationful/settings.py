@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Traveller.apps.TravellerConfig',
     'Owner.apps.OwnerConfig',
     'Booking.apps.BookingConfig',
+    'PropertyManagement.apps.PropertymanagementConfig'
 
 ]
 
