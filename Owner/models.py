@@ -5,7 +5,7 @@ from UserManagement.models import Profile
 
 class Owner(models.Model):
     no_of_property = models.CharField(max_length=100)
-    Type = models.ForeignKey(Profile, on_delete=models.CASCADE)
+    Type = models.ForeignKey(Profile,on_delete=models.CASCADE)
 
 
 
