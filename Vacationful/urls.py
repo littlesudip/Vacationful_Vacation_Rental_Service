@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from PropertyManagement import views as property_views
+from UserManagement import  views as user_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('addproperty/',property_views.addproperty ),
-    path('showproperty/', property_views.showallproperty)
+    path('showproperty/', property_views.showallproperty),
+    path('Registration/', user_views.register, name='Register')
 ]

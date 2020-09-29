@@ -1,6 +1,24 @@
 from django.shortcuts import render
 from .models import Profile
 from .forms import ProfileForm
+from django.contrib.auth.forms import UserCreationForm
+
+def register(request):
+
+    form = UserCreationForm()
+
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+
+    context ={
+        'form' : form
+    }
+    return render(request, 'user/register.html', context)
+
+
 
 
 # Create your views here.
