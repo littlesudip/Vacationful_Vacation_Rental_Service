@@ -22,7 +22,7 @@ def register(request):
 
 
 # Create your views here.
-def showprofile(request):
+def viewprofile(request):
 
     ProfileList= Profile.objects.all()
     context = {

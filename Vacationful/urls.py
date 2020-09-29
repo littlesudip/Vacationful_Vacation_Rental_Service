@@ -18,9 +18,12 @@ from django.urls import path
 from PropertyManagement import views as property_views
 from UserManagement import  views as user_views
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('addproperty/',property_views.addproperty ),
     path('showproperty/', property_views.showallproperty),
-    path('Registration/', user_views.register, name='Register')
+    path('registration/', user_views.register, name='register'),
+    path('createprofile/',user_views.createprofile),
+    path('viewprofile/',user_views.viewprofile)
 ]

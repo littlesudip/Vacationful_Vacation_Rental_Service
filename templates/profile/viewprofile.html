@@ -1,7 +1,15 @@
+<h2>All Profile informations are shown here:</h2>
 
-{% block content %}
+<br>
+{% for user in Profiles %}
+<p>
+    Full_name :{{ user.Full_name }}<br>
+    Address : {{ user.Address }}<br>
+    Contact_No :{{ user.Contact_No }}<br>
 
-{{ profile }}
+    NID_No :{{ user.NID_No }}<br>
 
+    user : {{ user.user }}<br>
+</p>
 
-{% endblock content %}
+{% endfor %}
