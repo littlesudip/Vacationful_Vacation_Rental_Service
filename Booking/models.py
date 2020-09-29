@@ -8,7 +8,7 @@ class Booking(models.Model):
     Checkin_Time = models.CharField(max_length=100)
     Checkout_Date = models.CharField(max_length=100)
     Checkout_time = models.CharField(max_length=100)
-    No_of_Guests = models.IntegerField(max_length=10)
+    No_of_Guests = models.IntegerField(max_length=100)
     traveller_Info = models.ForeignKey(Traveller,on_delete=models.CASCADE)
 
 def __str__(self):
