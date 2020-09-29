@@ -1,17 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base html</title>
+</head>
+<body>
 
-<a href="{% url 'register' %}">Sign Up</a><br>
-<a href="{% url 'login' %}">Login</a><br>
-<a href="{% url 'logout' %}">Logout</a><br>
-<a href="{% url 'viewprofile' %}">Show Profile</a><br>
-<a href="{% url 'createprofile' %}">Create a new profile</a><br>
-<h3>{{ user.viewprofile }}</h3>
-<h3>{{ user.createprofile }}</h3>
-{% if user.is_authenticated %}
-<h3>{{ user.username }}</h3>
-<h3>{{ user.logout}}</h3>
-{% else %}
-<h3>{{ user.login }}</h3>
-<h3>{{ user.register }}</h3>
-{% endif %}
-
-
+</body>
+</html>

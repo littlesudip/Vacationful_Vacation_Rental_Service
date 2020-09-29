@@ -20,7 +20,7 @@ def register(request):
 
 
 
-from django.contrib.auth.decorators import login_required
+
 # Create your views here.
 def viewprofile(request):
 
@@ -29,7 +29,7 @@ def viewprofile(request):
         'Profiles': ProfileList
     }
     return render(request, 'profile/viewprofile.html', context)
-@login_required()
+
 def createprofile(request):
     message = ""
     form = ProfileForm()

@@ -1,15 +1,15 @@
-{%  extends "base.html" %}
+<h2>All Profile informations are shown here:</h2>
 
-<h3> All Available Property List</h3>
 <br>
 {% for user in Profiles %}
-    <p>
+<p>
+    Full_name :{{ user.Full_name }}<br>
+    Address : {{ user.Address }}<br>
+    Contact_No :{{ user.Contact_No }}<br>
 
-    Full_Name: {{ user.Full_Name}} <br>
-    Email: {{ user.Email}} <br>
-    Contact_No: {{ user.Contact_No}} <br>
-    NID_No: {{ user.NID_No}} <br>
-    <br>
-    </p>
+    NID_No :{{ user.NID_No }}<br>
+
+    user : {{ user.user }}<br>
+</p>
 
 {% endfor %}
