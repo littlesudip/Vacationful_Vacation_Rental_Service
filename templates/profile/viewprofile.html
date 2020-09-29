@@ -1,15 +1,18 @@
-<h2>All Profile informations are shown here:</h2>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h2>All Available Property Owners:</h2>
 
 <br>
 {% for user in Profiles %}
 <p>
-    Full_name :{{ user.Full_name }}<br>
+    Name : {{ user.Full_name }}<br>
     Address : {{ user.Address }}<br>
-    Contact_No :{{ user.Contact_No }}<br>
+    Contact No :{{ user.Contact_No }}<br>
+    NID No :{{ user.NID_No }}<br>
 
-    NID_No :{{ user.NID_No }}<br>
-
-    user : {{ user.user }}<br>
 </p>
 
 {% endfor %}
+{% endblock content %}

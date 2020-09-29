@@ -35,7 +35,6 @@ def register(request):
     }
     return render(request, 'user/register.html', context)
 
-
 # Create your views here.
 def viewprofile(request):
 
@@ -44,6 +43,7 @@ def viewprofile(request):
         'Profiles': ProfileList
     }
     return render(request, 'profile/viewprofile.html', context)
+
 
 
 @login_required()

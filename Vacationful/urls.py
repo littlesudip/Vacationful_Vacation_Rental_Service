@@ -16,16 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from PropertyManagement import views as property_views
+from PropertyManagement.views import showallproperty
 from UserManagement import  views as user_views
 from django.urls import path,include
 
 
 urlpatterns = [
+    path('', showallproperty),
     path('admin/', admin.site.urls),
-    path('addproperty/',property_views.addproperty ),
-    path('showproperty/', property_views.showallproperty),
-    path('registration/', user_views.register, name='register'),
-    path('createprofile/',user_views.createprofile),
-    path('viewprofile/',user_views.viewprofile,name='profile'),
+    path('addproperty/',property_views.addproperty,name='addproperty' ),
+    path('showproperty/', property_views.showallproperty,name='showproperty'),
+    path('register/', user_views.register, name='register'),
+    path('createprofile/',user_views.createprofile,name='createprofile'),
+    path('viewprofile/',user_views.viewprofile,name='viewprofile'),
     path('accounts/',include('django.contrib.auth.urls'))
 ]

@@ -12,7 +12,6 @@ class Booking(models.Model):
     No_of_Guests = models.IntegerField(blank=True, null=True)
     traveller_Info = models.ForeignKey(Traveller,on_delete=models.CASCADE)
 
-
 def __str__(self):
         return self.traveller_Info.tarvelling_area
 

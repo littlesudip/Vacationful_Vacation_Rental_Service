@@ -1,22 +1,16 @@
-
 from django.shortcuts import render
-
 from .forms import PropertyForm
 from .models import Property
 # Create your views here.
-
-
 
 def showallproperty(request):
 
     listproperty = Property.objects.all()
 
-    context = {""
+    context = {
                "all_property": listproperty
                }
-
     return render(request, 'Property/showallproperty.html',context)
-
 
 
 def addproperty(request):
