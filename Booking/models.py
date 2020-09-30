@@ -15,8 +15,7 @@ class Booking(models.Model):
     No_of_Guests = models.IntegerField(blank=True, null=True)
 
 
-def __str__(self):
-        return self.traveller_Info.Full_Name
+
 
 
 
