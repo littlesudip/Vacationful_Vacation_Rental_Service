@@ -19,6 +19,8 @@ from PropertyManagement import views as property_views
 from PropertyManagement.views import showallproperty
 from UserManagement import  views as user_views
 from django.urls import path,include
+from Booking import views as booking_views
+
 
 
 urlpatterns = [
@@ -29,5 +31,7 @@ urlpatterns = [
     path('register/', user_views.register, name='register'),
     path('createprofile/',user_views.createprofile,name='createprofile'),
     path('viewprofile/',user_views.viewprofile,name='viewprofile'),
-    path('accounts/',include('django.contrib.auth.urls'))
+    path('accounts/',include('django.contrib.auth.urls')),
+    path('showbookinglist/',booking_views.showbookinglist,name='showbookinglist'),
+    path('addbookinginfo/',booking_views.addbookinginfo,name='addbookinginfo')
 ]

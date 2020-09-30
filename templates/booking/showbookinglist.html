@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h2> Show Booking Information </h2>
+
+  {%for info in all_BookingList %}
+   <p>
+    Checkin_Date = {{ info.Checkin_Date }}<br>
+    Checkin_Time  = {{ info.Checkin_Time }}<br>
+    Checkout_Date = {{ info.Checkout_Date }}<br>
+    Checkout_time = {{ info.Checkout_Time}}<br>
+    No_of_Guests = {{ info.No_of_Guests }}<br>
+   </p>
+
+
+
+{% endfor %}
+{% endblock content %}
