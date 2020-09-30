@@ -37,33 +37,25 @@
           </li>
 
 
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'showbookinglist' %}">Show Booking Information</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="{% url 'addbookinginfo' %}">Add Booking Details</a>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Booking
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+              <a class="dropdown-item" href="{% url 'addbookinginfo' %}">Add Booking</a>
+
+              <a class="dropdown-item" href="{% url 'showbookinglist' %}">History</a>
+
+            </div>
           </li>
 
         <li class="nav-item">
             <a class="nav-link" href="#" > Payments </a>
           </li>
-
-
-         <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Insert
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-              <a class="dropdown-item" href="{% url 'addproperty' %}">Add Property</a>
-
-              <a class="dropdown-item" href="#">property</a>
-
-              <a class="dropdown-item" href="#">Something else here</a>
-
-            </div>
-          </li> -->
 
           <li class="nav-item dropdown">
               {% if user.is_authenticated %}
