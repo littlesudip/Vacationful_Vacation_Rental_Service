@@ -13,7 +13,7 @@ class Booking(models.Model):
     Checkout_Date = models.CharField(max_length=100)
     Checkout_time = models.CharField(max_length=100)
     No_of_Guests = models.IntegerField(blank=True, null=True)
-    
+
 
 def __str__(self):
         return self.traveller_Info.Full_Name
