@@ -3,10 +3,10 @@
 
 <h1 style="color: Green ">Sign Up For A Account</h1>
     <br>
-    <h3>{{ message }}</h3>
+{#    <h3>{{ message }}</h3>#}
 <form method="POST" enctype="multipart/form-data" >
       {% csrf_token %}
-      {{ form.as_p }}
+     {{ form.as_p }}
       {{ form1.as_p }}
       <input type="submit">
 </form>

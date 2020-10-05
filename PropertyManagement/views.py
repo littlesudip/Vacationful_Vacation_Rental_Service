@@ -1,14 +1,17 @@
 from django.shortcuts import render
 from .forms import PropertyForm
 from .models import Property
+from Owner.models import Owner
 # Create your views here.
 
 def showallproperty(request):
 
-    listproperty = Property.objects.all()
+    listproperty = Property.objects.filter(owner_id__user=request.user)
 
     context = {
-               "all_property": listproperty
+               "all_property": listproperty,
+                "owner": True,
+                "traveller":True
                }
     return render(request, 'Property/showallproperty.html',context)
 
@@ -18,14 +21,16 @@ def addproperty(request):
     message = ""
     form= PropertyForm()
     if request.method == "POST":
-
         form = PropertyForm(request.POST)
-
-    if form.is_valid():
-        form.save()
-        message = "Property is inserted to Database. You can insert a new property"
-        form = PropertyForm()
+        if form.is_valid():
+            owner = Owner.objects.get(user=request.user)
+            ins= form.save(commit=False)
+            ins.owner_id = owner
+            ins.save()
+            message = "Property is inserted to Database. You can insert a new property"
+    form = PropertyForm()
     context = {
+        "owner": True,
         'form': form,
         'message' : message
     }

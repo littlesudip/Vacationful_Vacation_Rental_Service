@@ -24,7 +24,7 @@ from Booking import views as booking_views
 
 
 urlpatterns = [
-    path('', showallproperty),
+    path('', user_views.viewprofile),
     path('admin/', admin.site.urls),
     path('addproperty/',property_views.addproperty,name='addproperty' ),
     path('showproperty/', property_views.showallproperty,name='showproperty'),

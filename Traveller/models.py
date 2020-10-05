@@ -1,9 +1,12 @@
+from django.contrib.auth.models import User
 from django.db import models
 from UserManagement.models import Profile
+
+
 # Create your models here.
 
 class Traveller(models.Model):
-    user = models.ForeignKey(Profile,on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
-        return (self.user.Full_name)
+        return self.user.username

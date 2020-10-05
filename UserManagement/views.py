@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render, redirect
 
 from Owner.models import Owner
 from Traveller.models import Traveller
@@ -7,43 +7,44 @@ from .forms import ProfileForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 
-def register(request):
 
+def register(request):
     form = UserCreationForm()
-    form1 = ProfileForm(request.POST,request.FILES)
+    form1 = ProfileForm(request.POST, request.FILES)
 
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
-            user =  form.save()
-
-        if form1.is_valid():
-            profile = form1.save(commit=False)
-            profile.user = user
-            profile.save()
-            if (form1.cleaned_data.get('Owner')):
-                owner = Owner(user=profile)
-                owner.save()
-            else:
-                traveller = Traveller(user=profile)
-                traveller.save()
+            user = form.save()
+            if form1.is_valid():
+                profile = form1.save(commit=False)
+                profile.user = user
+                profile = profile.save()
+                r = int(form1.cleaned_data.get('Role'))
+                if r == 1:
+                    print("OWNER",r)
+                    owner = Owner(user=user)
+                    owner.save()
+                if r == 2:
+                    print("TRAVELLER",r)
+                    traveller = Traveller(user=user)
+                    traveller.save()
             return render(request, 'profile/viewprofile.html')
 
-    context ={
-        'form' : form,
+    context = {
+        'form': form,
         'form1': form1
     }
     return render(request, 'user/register.html', context)
 
+
 # Create your views here.
 def viewprofile(request):
-
-    ProfileList= Profile.objects.all()
+    ProfileList = Profile.objects.all()
     context = {
         'Profiles': ProfileList
     }
     return render(request, 'profile/viewprofile.html', context)
-
 
 
 @login_required()
@@ -55,7 +56,6 @@ def createprofile(request):
         form = ProfileForm(request.POST, request.FILES)
         message = "Invalid input. Please try again!"
         if form.is_valid():
-
             profile = form.save(commit=False)
 
             profile.user = request.user
@@ -67,7 +67,7 @@ def createprofile(request):
             form = ProfileForm()
 
     context = {
-        'form' : form,
-        'message' : message
+        'form': form,
+        'message': message
     }
     return render(request, 'profile/createprofile.html', context)

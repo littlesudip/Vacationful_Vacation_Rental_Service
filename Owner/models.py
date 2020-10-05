@@ -1,9 +1,10 @@
 from django.db import models
 from UserManagement.models import Profile
+from django.contrib.auth.models import User
 # Create your models here.
 
 class Owner(models.Model):
-    user = models.ForeignKey(Profile,on_delete=models.CASCADE)
+    user = models.ForeignKey(User,on_delete=models.CASCADE, default=1)
 
     def __str__(self):
-        return (self.user.Full_name)
+        return (self.user.username)
