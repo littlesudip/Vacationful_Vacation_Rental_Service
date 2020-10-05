@@ -7,11 +7,11 @@ from Owner.models import Owner
 def showallproperty(request):
 
     listproperty = Property.objects.filter(owner_id__user=request.user)
-
+    
     context = {
                "all_property": listproperty,
                 "owner": True,
-                "traveller":True
+                "traveller":False,
                }
     return render(request, 'Property/showallproperty.html',context)
 
@@ -27,7 +27,7 @@ def addproperty(request):
             ins= form.save(commit=False)
             ins.owner_id = owner
             ins.save()
-            message = "Property is inserted to Database. You can insert a new property"
+            message = "Your Property is inserted Sucessfully. You can insert a new Property"
     form = PropertyForm()
     context = {
         "owner": True,

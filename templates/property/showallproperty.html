@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
-{% load static %}
 
 {% block content %}
+
 <h3> All Available Property List</h3>
 
 <br>
@@ -12,6 +12,7 @@
     Description: {{ listproperty.property_description}} <br>
     Rent Rate: {{ listproperty.property_pricing}} <br>
     </p>
+    <tr><td><img src="{{ listproperty.property_picture }}" height="200" width="200"></td></tr>
 
 {% endfor %}
 {% endblock content %}

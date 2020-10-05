@@ -43,9 +43,12 @@ INSTALLED_APPS = [
     'Owner.apps.OwnerConfig',
     'Booking.apps.BookingConfig',
     'PropertyManagement.apps.PropertymanagementConfig',
-    'Payment.apps.PaymentConfig'
+    'Payment.apps.PaymentConfig',
+    'crispy_forms'
 
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,5 +132,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
-LOGIN_REDIRECT_URL='viewprofile'
+LOGIN_REDIRECT_URL='addproperty'
 LOGOUT_REDIRECT_URL='login'
