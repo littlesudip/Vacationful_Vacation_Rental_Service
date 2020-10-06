@@ -20,6 +20,7 @@ from PropertyManagement.views import showallproperty
 from UserManagement import  views as user_views
 from django.urls import path,include
 from Booking import views as booking_views
+from Traveller import views as traveller_views
 
 
 
@@ -33,5 +34,7 @@ urlpatterns = [
     path('viewprofile/',user_views.viewprofile,name='viewprofile'),
     path('accounts/',include('django.contrib.auth.urls')),
     path('showbookinglist/',booking_views.showbookinglist,name='showbookinglist'),
-    path('addbookinginfo/',booking_views.addbookinginfo,name='addbookinginfo')
+    path('addbookinginfo/',booking_views.addbookinginfo,name='addbookinginfo'),
+    path('showtravellerlist/',traveller_views.showtravellerlist,name='showtravellerlist'),
+    path('addbookinginfo/',traveller_views.addtravellerinfo,name='addtravellerinfo')
 ]
