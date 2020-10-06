@@ -5,44 +5,56 @@
 
         <div class="card bg-light mb-2`" >
           <div class="row no-gutters">
-            <div class="col-md-4">
-              <img src="{{ search.image.url }}" class="card-img" alt="...">
-            </div>
+
 
             <div class="col-md-8">
               <div class="card-body">
-                <h5 class="card-title">{{ search.name }}</h5>
+                <h5 class="card-title">{{ search.property_name }}</h5>
                 <p class="card-text">
-                    {{ search.name }} <br>
-                    {{ search.id }} <br>
-                    {{ search.price }} <br>
-                    {{ search.category }} <br>
-                    {{ search.description }} <br>
+                    {{ search.property_name }} <br>
+                    {{ search.property_type }} <br>
+                    {{ search.property_location }} <br>
+                    {{ search.property_pricing }} <br>
+                    {{ search.property_description }} <br>
+                    <img src="{{ search.property_picture.url }}" height="300" width="300"><br>
                 </p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+                  <form method="POST">
+                        {% csrf_token %}
+                      {{ form }}
+                      <input type="hidden" name="p_id" value="{{ search.id }}">
+                       <button type="submit" class="btn btn-primary">Book Now</button>
+                  </form>
+
+
+{#                  <a href="{{ p.id }}">#}
+                    {# http://127.0.0.1:8000/products/product_id    #}
+{#                    <button type="button" class="btn btn-outline-primary">Details</button>#}
+{#                </a>#}
+
 {#  updatecart/product_id #}
-                  <a href="{% url 'update-cart' search.id  %}" >Add to Cart</a>
+{#                   <a href="{% url 'update-cart' search.id  %}" >Add to Cart</a>#}
 
               </div>
             </div>
           </div>
         </div>
 
-    <div class="container">
-        {% for review in search.reviews.all %}
-            User: {{ review.user.username }}<br>
-            Rating: {{ review.rating }} <br>
-            Comment: {{ review.comment }} <br><br><br>
-        {% endfor %}
-    </div>
+{#    <div class="container">#}
+{#        {% for review in search.reviews.all %}#}
+{#            User: {{ review.user.username }}<br>#}
+{#            Rating: {{ review.rating }} <br>#}
+{#            Comment: {{ review.comment }} <br><br><br>#}
+{#        {% endfor %}#}
+{#    </div>#}
 
-    <div class="container">
-        <form method="POST">
-            {% csrf_token %}
-            {{ form | crispy }}
-            <input type="submit">
-        </form>
-    </div>
+{#    <div class="container">#}
+{#        <form method="POST">#}
+{#            {% csrf_token %}#}
+{#            {{ form | crispy }}#}
+{#            <input type="submit">#}
+{#        </form>#}
+{#    </div>#}
 
 
 {% endblock content %}

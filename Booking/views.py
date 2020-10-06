@@ -6,7 +6,9 @@ from Traveller.models import Traveller
 
 def showbookinglist(request):
 
-    bookinglist = Booking.objects.all()
+    # listproperty = Property.objects.filter(owner_id__user=request.user)
+
+    bookinglist = Booking.objects.filter( Traveller_ID__user= request.user)
 
     context = {
                 "traveller":True,

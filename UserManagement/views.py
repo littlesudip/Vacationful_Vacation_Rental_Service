@@ -8,6 +8,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.decorators import login_required
 
 
+
 def register(request):
     form = UserCreationForm()
     form1 = ProfileForm(request.POST, request.FILES)
@@ -39,11 +40,21 @@ def register(request):
 
 
 # Create your views here.
+@login_required()
 def viewprofile(request):
-    ProfileList = Profile.objects.all()
-    context = {
-        'Profiles': ProfileList
-    }
+    if request.user.is_authenticated:
+        ProfileList = Profile.objects.filter(user=request.user)
+        owner = Owner.objects.filter(user=request.user)
+        if owner:
+            context = {
+            'Profiles': ProfileList,
+            "owner": True,
+            }
+        else:
+            context = {
+            'Profiles': ProfileList,
+            "traveller": True,
+            }
     return render(request, 'profile/viewprofile.html', context)
 
 

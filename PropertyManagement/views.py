@@ -7,10 +7,10 @@ from django.shortcuts import render, get_object_or_404, redirect, HttpResponseRe
 from django.contrib.auth.models import User
 from .models import Property
 from .forms import PropertyForm
+from Booking.forms import BookingForm
+from Traveller.models import Traveller
 from django.contrib.auth.decorators import login_required
 # Create your views here.
-
-
 
 
 def showallproperty(request):
@@ -20,7 +20,7 @@ def showallproperty(request):
     context = {
                "all_property": listproperty,
                 "owner": True,
-                "traveller":True,
+                "traveller":False,
                }
     return render(request, 'Property/showallproperty.html',context)
 
@@ -30,7 +30,7 @@ def addproperty(request):
     message = ""
     form= PropertyForm()
     if request.method == "POST":
-        form = PropertyForm(request.POST)
+        form = PropertyForm(request.POST,request.FILES)
         if form.is_valid():
             owner = Owner.objects.get(user=request.user)
             ins= form.save(commit=False)
@@ -47,9 +47,10 @@ def addproperty(request):
 
 
 def homepage(request):
+    if request.user.is_authenticated:
+        owner = Owner.objects.filter (user = request.user )
 
     property = Property.objects.all()
-
 
     if request.method == 'POST':
         name = Property.objects.filter(name__icontains = request.POST['search'])
@@ -61,85 +62,49 @@ def homepage(request):
     user_count = User.objects.count()
     product_count = Property.objects.count()
 
-    context = {
+    if owner:
+        context = {
         'property' : property,
         'u_c' : user_count,
-        'p_c' : product_count
-    }
+        'p_c' : product_count,
+        "owner": True,
+        }
+
+    else:
+        context = {
+            'property': property,
+            'u_c': user_count,
+            'p_c': product_count,
+            "traveller": True,
+        }
+
     return render(request, 'Property/homepage.html', context)
 
 def showDetails(request, property_id):
+    if request.user.is_authenticated:
+        traveller = Traveller.objects.filter (user = request.user )
+        if traveller:
+            form = BookingForm()
+            traveller = Traveller.objects.filter(user=request.user)
+            searched_property = get_object_or_404(Property, id=property_id)
 
+            if request.method == "POST":
+                form = BookingForm(request.POST)
+                if form.is_valid():
+                    booking = form.save(commit=False)
+                    property = Property.objects.get(id=int(request.POST.get("p_id")))
+                    booking.Property_ID = property
+                    booking.Traveller_ID = traveller[0]
+                    booking.save()
 
-    searched_property = get_object_or_404(Property, id=property_id)
-
-
-    form = ReviewForm()
-
-
-    if request.method == "POST":
-        form = ReviewForm(request.POST)
-
-
-        if form.is_valid:
-            instance = form.save(commit=False)
-            instance.user = request.user
-            instance.save()
-
-
-            searched_property.reviews.add(instance)
-            searched_property.save()
-
-
-    context = {
-        'search': searched_property,
-        'form': form
-    }
+            context = {
+                'search': searched_property,
+                'form': form,
+                "traveller": True,
+            }
     return render(request, 'Property/detail_property_view.html', context)
 
 
-
-
-
-
-
-
-def showDetails2(request, product_id):
-
-
-    #searched_product = get_object_or_404(Product, id=product_id)
-
-
-    #searched_product = Product.objects.get(id=product_id) #sure one return
-    #print(searched_product)
-
-
-    searched_product = Property.objects.filter(id=property_id)  # many return
-
-
-    #searched_product = get_object_or_404(Product, id=product_id)
-    #print(searched_product)
-
-
-
-
-
-
-    if len(searched_property) == 0:
-        does_exists = False
-        context = {
-            'does_exists': does_exists,
-        }
-    else:
-        does_exists = True
-        search = searched_property[0]
-        context = {
-            'does_exists': does_exists,
-            'search': search
-        }
-
-
-    return render(request, 'Property/detail_property_view.html', context)
 
 
 

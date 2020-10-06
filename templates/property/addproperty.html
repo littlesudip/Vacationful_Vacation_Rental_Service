@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% block content %}
 
 {% load crispy_forms_tags %}
@@ -6,7 +6,9 @@
 <h2> Add your property details here: </h2>
 <form method="POST" enctype="multipart/form-data">
   {% csrf_token %}
+
     {{ form | crispy }}
+
     {{ message }}<br><br>
 
     <input type="submit">

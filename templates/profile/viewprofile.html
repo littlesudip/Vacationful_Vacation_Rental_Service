@@ -1,9 +1,9 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
+
 {% load static %}
 {% block content %}
-
-<h2>All Available Property Owners:</h2>
-
+<br>
+<h2>Profile Details:</h2>
 <br>
 {% for user in Profiles %}
 <p>
@@ -11,6 +11,14 @@
     Address : {{ user.Address }}<br>
     Contact No :{{ user.Contact_No }}<br>
     NID No :{{ user.NID_No }}<br>
+    <br>
+    <img src="{{ user.Profile_Picture.url }}" height="300" width="300"><br>
+    <br>
+    <br>
+    <img src="{{ user.NID_Front.url }}" height="300" width="300"><br>
+    <br>
+    <br>
+    <img src="{{ user.NID_Back.url }}" height="300" width="300"><br>
 
 </p>
 

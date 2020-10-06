@@ -40,8 +40,8 @@ urlpatterns = [
     path('showtravellerlist/',traveller_views.showtravellerlist,name='showtravellerlist'),
     path('addbookinginfo/',traveller_views.addtravellerinfo,name='addtravellerinfo'),
     path('homepage/', property_views.homepage, name='property_list'),
-
     path('homepage/<int:property_id>', property_views.showDetails, name='detail_view'),
+    # path('showdetails/<int:property_id>', property_views.showDetails, name='detail_view'),
 
 
 ]
