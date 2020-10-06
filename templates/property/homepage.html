@@ -55,7 +55,7 @@
 
       <input  type="search" name="search" hidden value="Smartphone">
 
-      <button  type="submit">Smartphone</button>
+
     </form>
 
     <br>
@@ -65,7 +65,7 @@
 
       <input  type="search" name="search" hidden value="Laptop">
 
-      <button  type="submit">Laptop</button>
+
     </form>
 
     <br><br>
@@ -78,11 +78,11 @@
 
         <div class="col mb-4">
           <div class="card h-100" >
-            <img src="{{ p.image.url }}"class="card-img-top" alt="...">
+            <img src="{{ p.property_picture.url }}"class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">{{ p.name }}</h5>
+              <h5 class="card-title">{{ p.property_name }}</h5>
               <p class="card-text">
-                  <h3>{{ p.price }}</h3>
+                  <h3>{{ p.property_pricing }}</h3>
               </p>
 
                 {# http://127.0.0.1:8000/products/    #}
