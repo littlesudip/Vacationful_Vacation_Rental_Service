@@ -21,6 +21,8 @@ from UserManagement import  views as user_views
 from django.urls import path,include
 from Booking import views as booking_views
 from Traveller import views as traveller_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 
@@ -36,5 +38,13 @@ urlpatterns = [
     path('showbookinglist/',booking_views.showbookinglist,name='showbookinglist'),
     path('addbookinginfo/',booking_views.addbookinginfo,name='addbookinginfo'),
     path('showtravellerlist/',traveller_views.showtravellerlist,name='showtravellerlist'),
-    path('addbookinginfo/',traveller_views.addtravellerinfo,name='addtravellerinfo')
+    path('addbookinginfo/',traveller_views.addtravellerinfo,name='addtravellerinfo'),
+    path('homepage/', property_views.homepage, name='property_list'),
+
+    path('homepage/<int:property_id>', property_views.showDetails, name='detail_view'),
+
+
 ]
+
+if settings.DEBUG == True:
+    urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

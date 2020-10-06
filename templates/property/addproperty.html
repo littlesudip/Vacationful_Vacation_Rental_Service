@@ -4,7 +4,7 @@
 {% load crispy_forms_tags %}
 
 <h2> Add your property details here: </h2>
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
   {% csrf_token %}
     {{ form | crispy }}
     {{ message }}<br><br>
