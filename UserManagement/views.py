@@ -26,7 +26,7 @@ def register(request):
                     print("OWNER",r)
                     owner = Owner(user=user)
                     owner.save()
-                if r == 2:
+                else:
                     print("TRAVELLER",r)
                     traveller = Traveller(user=user)
                     traveller.save()

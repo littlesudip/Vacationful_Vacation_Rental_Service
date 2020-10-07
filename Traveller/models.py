@@ -9,6 +9,6 @@ from PropertyManagement.models import Property
 
 class Traveller(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
-    Property_name = models.ForeignKey(Property, on_delete=models.CASCADE, default=1)
+
     def __str__(self):
         return self.user.username
