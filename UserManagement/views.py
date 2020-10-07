@@ -30,7 +30,7 @@ def register(request):
                     print("TRAVELLER",r)
                     traveller = Traveller(user=user)
                     traveller.save()
-            return render(request, 'profile/viewprofile.html')
+            return render(request, 'property/homepage.html')
 
     context = {
         'form': form,
