@@ -45,7 +45,7 @@ def addproperty(request):
     }
     return render(request, 'Property/addproperty.html' ,context)
 
-
+@login_required()
 def homepage(request):
     if request.user.is_authenticated:
         owner = Owner.objects.filter (user = request.user )
@@ -82,6 +82,10 @@ def homepage(request):
 
 def showDetails(request, property_id):
     if request.user.is_authenticated:
+        form = BookingForm()
+        traveller = Traveller.objects.filter(user=request.user)
+        searched_property = get_object_or_404(Property, id=property_id)
+
         traveller = Traveller.objects.filter (user = request.user )
         if traveller:
             form = BookingForm()
@@ -102,6 +106,14 @@ def showDetails(request, property_id):
                 'form': form,
                 "traveller": True,
             }
+        else :
+
+            context = {
+                'search': searched_property,
+                "owner": True,
+            }
+
+
     return render(request, 'Property/detail_property_view.html', context)
 
 

@@ -1,10 +1,17 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% block content %}
 {% load crispy_forms_tags %}
 
-<h1 style="color: Green ">Sign Up For An Account</h1>
-    <br>
+<br>
+ <div class="container">
+    <div class="jumbotron">
+  <h1 class="text-center">Sign Up For An Account </h1>
+  <h2 class="text-center" > Join As Traveller Or Property Owner On Vacationful </h2>
+    </div>
+    </div>
+
 {#    <h3>{{ message }}</h3>#}
+
 <form method="POST" enctype="multipart/form-data" >
       {% csrf_token %}
      {{ form | crispy }}

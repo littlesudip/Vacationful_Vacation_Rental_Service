@@ -2,15 +2,36 @@
 {% load static %}
 
 {% block content %}
-<h2> Show Booking Information </h2>
 
-  {% for info in bookinginfo %}
-   <p>
-    Checkin_Date = {{ info.Checkin_Date }}<br>
-    Checkin_Time  = {{ info.Checkin_Time }}<br>
-    Checkout_Date = {{ info.Checkout_Date }}<br>
-    Checkout_time = {{ info.Checkout_Time}}<br>
-    No_of_Guests = {{ info.No_of_Guests }}<br>
-   </p>
-{% endfor %}
+    <br>
+
+ <div class="container">
+    <div class="jumbotron">
+  <h1 class="text-center">Your Booking List </h1>
+  <p class="text-center" > Here are  list of your Bookings on Vacationful </p>
+    </div>
+    </div>
+
+    <br>
+
+ {% for info in bookinginfo %}
+
+        <div class="card text-white bg-secondary mb-2`" >
+                      <div class="row no-gutters">
+
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title"> Checkin Date : {{ info.Checkin_Date }}</h5>
+                            <h5 class="card-title">  Checkin Time  : {{ info.Checkin_Time }} </h5>
+                              <h5 class="card-title"> Checkout Date : {{ info.Checkout_Date }}</h5>
+							  <h5 class="card-title"> Checkout Time : {{ info.Checkout_Time }}</h5>
+                              <h5 class="card-title">   No of Guests : {{ info.No_of_Guests }}</h5>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        <br>
+    {% endfor %}
 {% endblock content %}
+

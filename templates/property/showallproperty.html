@@ -1,18 +1,36 @@
 {% extends 'base2.html' %}
 {%  load static %}
 {% block content %}
+<br>
 
-<h3> All Available Property List</h3>
+ <div class="container">
+    <div class="jumbotron">
+  <h1 class="text-center">Your Property List </h1>
+  <p class="text-center" > Here are  list of your all property on Vacationful </p>
+    </div>
+    </div>
 
 <br>
-{% for listproperty in all_property %}
-    <p>
-    Property Name: {{listproperty.property_name}} <br>
-    Location: {{ listproperty.property_location}} <br>
-    Description: {{ listproperty.property_description}} <br>
-    Rent Rate: {{ listproperty.property_pricing}} <br>
-    </p>
-    <tr><td><img src="{{ listproperty.property_picture.url }}" height="200" width="200"></td></tr>
 
-{% endfor %}
+	{% for listproperty in all_property %}
+
+        <div class="card text-white bg-secondary mb-2`" >
+                      <div class="row no-gutters">
+                        <div class="col-md-4">
+                          <img src="{{ listproperty.property_picture.url }}" class="card-img" alt="...">
+                        </div>
+
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">  Property Name: {{listproperty.property_name}}</h5>
+                            <h5 class="card-title"> Location: {{ listproperty.property_location}} </h5>
+                              <h5 class="card-title">  Description: {{ listproperty.property_description}}</h5>
+                              <h5 class="card-title">   Rent Rate: {{ listproperty.property_pricing}} </h5>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+        <br>
+    {% endfor %}
 {% endblock content %}

@@ -2,29 +2,51 @@
 {% load crispy_forms_tags %}
 {% block content  %}
 
+    <br>
+
+<div class="container">
+    <div class="jumbotron">
+  <h1 class="text-center">Property Details</h1>
+  <p class="text-center" > Find out more about this property!</p>
+    </div>
+    </div>
+
+    <br>
+
+
+
 
         <div class="card bg-light mb-2`" >
-          <div class="row no-gutters">
+        <div class="p-3 mb-2 bg-primary text-white"><h2 class="text-center"> {{ search.property_name }}</h2>
+        </div>
+        <br>
+            <div class="row no-gutters">
 
+          <img src="{{ search.property_picture.url }}" class="rounded mx-auto d-block"   alt="Responsive image"><br>
 
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">{{ search.property_name }}</h5>
-                <p class="card-text">
-                    {{ search.property_name }} <br>
-                    {{ search.property_type }} <br>
-                    {{ search.property_location }} <br>
-                    {{ search.property_pricing }} <br>
-                    {{ search.property_description }} <br>
-                    <img src="{{ search.property_picture.url }}" height="300" width="300"><br>
+                <div class="card-body">
+                    <p class="card-text">
+                  <h4 class="text-center">Property Type: {{ search.property_type }}</h4>
+                  <h4 class="text-center">Location: {{ search.property_location }}</h4>
+                  <h4 class="text-center">Price: {{ search.property_pricing }} Taka/Day</h4><br>
+                    <h4 class="text-center">Discription: {{ search.property_description }}</h4> <br>
                 </p>
 
+            <div class="col-md-8">
+
+
+              <p>
+                  {% if traveller %}
                   <form method="POST">
                         {% csrf_token %}
-                      {{ form }}
+                      {{ form | crispy }}
                       <input type="hidden" name="p_id" value="{{ search.id }}">
                        <button type="submit" class="btn btn-primary">Book Now</button>
                   </form>
+                      </p>
+
+                  {% endif %}
+
 
 
 {#                  <a href="{{ p.id }}">#}

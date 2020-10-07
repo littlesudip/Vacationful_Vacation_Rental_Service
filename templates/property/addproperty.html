@@ -2,8 +2,15 @@
 {% block content %}
 
 {% load crispy_forms_tags %}
+<br>
 
-<h2> Add your property details here: </h2>
+    <div class="container">
+    <div class="jumbotron">
+  <h1 class="text-center">Add Your Property Here: </h1>
+  <p class="text-center" > You can enlist your available vacation rental property here easily!</p>
+    </div>
+    </div>
+
 <form method="POST" enctype="multipart/form-data">
   {% csrf_token %}
 
