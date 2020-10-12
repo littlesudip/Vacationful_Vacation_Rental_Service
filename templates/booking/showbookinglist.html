@@ -11,18 +11,19 @@
   <p class="text-center" > Here are  list of your Bookings on Vacationful </p>
     </div>
     </div>
-
     <br>
 
- {% for info in bookinginfo %}
+    {% for info in bookinginfo %}
 
         <div class="card text-white bg-secondary mb-2`" >
-                      <div class="row no-gutters">
 
+                      <div class="row no-gutters">
                         <div class="col-md-8">
                           <div class="card-body">
-                            <h5 class="card-title"> Checkin Date : {{ info.Checkin_Date }}</h5>
-                            <h5 class="card-title">  Checkin Time  : {{ info.Checkin_Time }} </h5>
+                              <h5 class="card-title"> Property Name : {{ info.Property_ID.property_name }}</h5>
+                              <img src="{{ info.Property_ID.property_picture.url  }}"  height="250" width="250" class="rounded" alt="...">
+                              <h5 class="card-title"> Checkin Date : {{ info.Checkin_Date }}</h5>
+                              <h5 class="card-title">  Checkin Time  : {{ info.Checkin_Time }} </h5>
                               <h5 class="card-title"> Checkout Date : {{ info.Checkout_Date }}</h5>
 							  <h5 class="card-title"> Checkout Time : {{ info.Checkout_Time }}</h5>
                               <h5 class="card-title">   No of Guests : {{ info.No_of_Guests }}</h5>
@@ -31,7 +32,10 @@
                         </div>
                       </div>
                     </div>
+
         <br>
     {% endfor %}
+
+    </div>
 {% endblock content %}
 

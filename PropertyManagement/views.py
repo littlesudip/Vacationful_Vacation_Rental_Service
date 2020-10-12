@@ -53,9 +53,9 @@ def homepage(request):
     property = Property.objects.all()
 
     if request.method == 'POST':
-        name = Property.objects.filter(name__icontains = request.POST['search'])
-        category = Property.objects.filter(category__icontains = request.POST['search'])
-        description = Property.objects.filter(description__icontains = request.POST['search'])
+        name = Property.objects.filter(property_location__icontains = request.POST['search'])
+        category = Property.objects.filter(property_name__icontains = request.POST['search'])
+        description = Property.objects.filter(property_description__icontains = request.POST['search'])
 
         property = name | category | description # C = A U B set operation
 
