@@ -1,6 +1,9 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
+
+       <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,7 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-        <title>Welcome to Vacationful!</title>
+{#        <title>Welcome to Vacationful!</title>#}
   </head>
   <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -45,14 +48,14 @@
                 <a class="nav-link"  href="{% url 'login' %}">Login</a>
             {% endif %}
 
-
-             <form method="POST" action="{% url 'property_list' %}">
-                {% csrf_token %}
-
-              <input  type="search" name="search">
-
-              <button  type="submit">Search</button>
-            </form>
+{##}
+{#             <form method="POST" action="{% url 'property_list' %}">#}
+{#                {% csrf_token %}#}
+{##}
+{#              <input  type="search" name="search">#}
+{##}
+{#              <button  type="submit">Search</button>#}
+{#            </form>#}
 
         </div>
       </div>

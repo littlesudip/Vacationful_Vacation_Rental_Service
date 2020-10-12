@@ -1,6 +1,9 @@
 {% extends 'base2.html' %}
 
 {% block content %}
+
+            <title>Online Vacation Rental - Vacationful</title>
+
 <br>
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -56,13 +59,7 @@
     <div class="jumbotron">
   <h1 class="text-center">Available Vacation Property For Rent</h1>
   <p class="text-center" > Choice your desired location and property for your upcoming vacation easily!</p>
-    </div>
-    </div>
-
-
-    <div class="container">
-    <div class="jumbotron">
-        <form method="POST" action="{% url 'property_list' %}">
+        <form class="text-center" method="POST" action="{% url 'property_list' %}">
                 {% csrf_token %}
 
               <input  type="search" name="search">
@@ -71,6 +68,9 @@
             </form>
     </div>
     </div>
+
+
+
 
 
 
