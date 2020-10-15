@@ -14,6 +14,8 @@ class Booking(models.Model):
     Checkout_time = models.CharField(max_length=100)
     No_of_Guests = models.IntegerField(blank=True, null=True)
 
+    def __str__(self):
+        return self.Checkin_Date 
 
 
 
