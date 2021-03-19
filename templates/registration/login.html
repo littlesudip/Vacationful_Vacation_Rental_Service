@@ -13,6 +13,6 @@
 <form method="POST" >
       {% csrf_token %}
       {{ form | crispy }}
-      <input type="submit">
+      <input type="submit" id="login-btn" >
 </form>
 {% endblock content %}
