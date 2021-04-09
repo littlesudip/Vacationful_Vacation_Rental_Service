@@ -34,9 +34,9 @@
 
                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                            <a class="dropdown-item"  href="{% url 'logout' %}">Logout</a>
-                             <a class="dropdown-item" href="{% url 'password_change' %}">Change Password</a>
-                             <a class="dropdown-item" href="{% url 'viewprofile' %}">View Profile</a>
+                            <a class="dropdown-item" name="logout" href="{% url 'logout' %}">Logout</a>
+                             <a class="dropdown-item" name="pass_cng" href="{% url 'password_change' %}">Change Password</a>
+                             <a class="dropdown-item" name="profile" href="{% url 'viewprofile' %}">View Profile</a>
                          </div>
 
                          {% else %}
@@ -53,9 +53,9 @@
 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-              <a class="dropdown-item" href="{% url 'addbookinginfo' %}">Add Booking</a>
+              <a class="dropdown-item" name="add_booking" href="{% url 'addbookinginfo' %}">Add Booking</a>
 
-              <a class="dropdown-item" href="{% url 'showbookinglist' %}">History</a>
+              <a class="dropdown-item" name="show_booking" href="{% url 'showbookinglist' %}">History</a>
 
             </div>
                        <li class="nav-item">
@@ -68,18 +68,18 @@
                   {% if owner %}
 
                     <li class="nav-item">
-                     <a class="nav-link" href="{% url 'addproperty' %} ">Add Property</a>
+                     <a class="nav-link" href="{% url 'addproperty' %} name="add_property" >Add Property</a>
                      </li>
 
                      <li class="nav-item">
-                        <a class="nav-link" href="{% url 'showproperty' %} ">Your Property</a>
+                        <a class="nav-link" href="{% url 'showproperty' %} name="my_property" ">Your Property</a>
                      </li>
 
 
 
                   {% endif %}
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" >
 
 
 
@@ -87,10 +87,10 @@
                   Login
                 </a>
 
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
 
-              <a class="dropdown-item" href="{% url 'register' %}">Sign Up</a>
-                <a class="dropdown-item"  href="{% url 'login' %}">Login</a>
+              <a class="dropdown-item" name="signup" href="{% url 'register' %}">Sign Up</a>
+                <a class="dropdown-item" name="login" href="{% url 'login' %}">Login</a>
 
             </div>
 

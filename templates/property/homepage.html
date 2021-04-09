@@ -97,9 +97,9 @@
                     <h6 class="card-title">Rate: {{ p.property_pricing }} Taka/Day</h6>
 
                 {# http://127.0.0.1:8000/products/    #}
-                <a href="{{ p.id }}">
+                <a href="{{ p.id }}" >
                     {# http://127.0.0.1:8000/products/product_id    #}
-                    <button type="button" class="btn btn-secondary">Details</button>
+                    <button type="button" class="btn btn-secondary" name="{{ p.id }}_order" >Details</button>
                 </a>
             </div>
           </div>

@@ -41,7 +41,7 @@
                         {% csrf_token %}
                       {{ form | crispy }}
                       <input type="hidden" name="p_id" value="{{ search.id }}">
-                       <button type="submit" class="btn btn-primary">Book Now</button>
+                       <button type="submit" class="btn btn-primary" name="bookin_button" >Book Now</button>
                   </form>
                       </p>
 
