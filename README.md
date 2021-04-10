@@ -6,16 +6,29 @@ Vacationful Is a Online Based Vacation Rental System.
 
 To run the project:
 
-1. Run migration
+1. Install Django
+```bash
+pip install django
+```
+2. Install Crispy-Froms
+```bash
+pip install django-crispy-forms
+```
+3. Install Pillow
+```bash
+pip install Pillow
+```
+4. Run migration
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
-2. Create super user
+5. Create super user
 ```bash
 python manage.py createsuperuser
 ```
-3. Run the server
+6. Run the server
 ```bash
 python manage.py runserver
 ```
+
